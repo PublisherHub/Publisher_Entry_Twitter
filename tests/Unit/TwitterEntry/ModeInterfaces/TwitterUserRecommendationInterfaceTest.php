@@ -1,10 +1,10 @@
 <?php
 
-namespace Unit\TwitterEntry\Mode;
+namespace Unit\TwitterEntry\ModeInterface;
 
 use Unit\Publisher\Mode\Recommendation\RecommendationInterfaceTest;
 
-class TwitterUserRecommendationTest extends RecommendationInterfaceTest
+class TwitterUserRecommendationInterfaceTest extends RecommendationInterfaceTest
 {
     
     protected function getEntryName()
