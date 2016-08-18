@@ -43,7 +43,7 @@ class TwitterUserEntry extends AbstractEntry implements RecommendationInterface
         string $message,
         string $url = '',
         string $title = '',
-        int $date = null
+        $date = null
     ) {
         $status = empty($title) ? $message : $title."\n".$message;
         $status .= empty($url) ?  '' : "\n".$url;
