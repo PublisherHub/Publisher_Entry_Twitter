@@ -3,10 +3,18 @@
 namespace Publisher\Entry\Twitter\Entity\Mode\Recommendation;
 
 use Publisher\Mode\Recommendation\Entity\AbstractRecommendation;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Publisher\Entry\Twitter\TwitterUserEntry;
 
 class TwitterUserRecommendation extends AbstractRecommendation
 {
+    
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        parent::loadValidatorMetadata($metadata);
+        parent::addDefaultConstraints($metadata);
+        parent::addScheduleNotSupportedConstraint($metadata);
+    }
     
     /**
      * @{inheritdoc}
