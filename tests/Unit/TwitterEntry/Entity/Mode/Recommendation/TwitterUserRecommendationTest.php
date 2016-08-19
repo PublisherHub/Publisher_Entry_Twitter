@@ -35,7 +35,7 @@ class TwitterUserRecommendationTest extends AbstractRecommendationTest
     {
         return array(
             array(
-                array(// invalid since Twitter doesn't support sheduled publishing per API
+                array(// invalid since Twitter doesn't support scheduled publishing per API
                     'message' => "Today #Unit 123",
                     'title' => "Testing",
                     'url' => 'http://www.example.com',
