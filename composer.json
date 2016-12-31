@@ -1,7 +1,7 @@
 {
-    "name": "publisher/twitter-entry",
+    "name": "publisher/entry_twitter",
     "description": "Entries for publisher/publisher to post on Twitter.",
-    "keywords": ["oauth", "publish", "post", "twitter"],
+    "keywords": ["publisher", "entry", "twitter", "publish", "post", "oauth"],
     "license": "MIT",
     "authors": [
         {
@@ -11,9 +11,10 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "publisher/publisher" : "dev-master",
-        "publisher/recommendation" : "dev-master",
-        "symfony/validator": "^3.1"
+        "publisher/publisher" : "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
     },
     "autoload": {
         "psr-4": {
